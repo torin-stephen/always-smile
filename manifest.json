@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Always Smile",
+    "version": "1.15.2",
+    "description": "Always use amazon smile, to help charity!",
+    "content_scripts": [{
+      "matches": ["*://*.amazon.com/*", "*://*.amazon.co.uk/*"],
+      "exclude_matches": ["*://smile.amazon.com/*", "*://smile.amazon.co.uk/*"],
+      "js": ["./js/content.js"]
+    }],
+    "permissions": ["activeTab"],
+    "icons": {
+      "128": "./icons/128_128.png",
+      "48": "./icons/48_48.png",
+      "16": "./icons/16_16.png"
+    },
+    "browser_action": {
+      "default_title": "Always Smile"
+    }
+  }
+  
